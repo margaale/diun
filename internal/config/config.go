@@ -83,7 +83,7 @@ func Load(flags model.Flags, version string) (*Config, error) {
 				Password: "guest",
 				Exchange: "",
 				Queue:    "queue",
-			}
+			},
 		},
 	}
 
