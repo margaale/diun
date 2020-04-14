@@ -75,6 +75,15 @@ func Load(flags model.Flags, version string) (*Config, error) {
 				Method:  "GET",
 				Timeout: 10,
 			},
+			Amqp: model.NotifAmqp{
+				Enable:   false,
+				Host:     "localhost",
+				Port:     5672,
+				Username: "guest",
+				Password: "guest",
+				Exchange: "",
+				Queue:    "queue",
+			}
 		},
 	}
 
